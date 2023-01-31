@@ -1,0 +1,11 @@
+def is_ascending(items):
+    if len(items)==0:
+        return True
+    for i in items:
+        if i<i+1:
+            return True
+        else:
+            return False
+
+
+print(is_ascending([]))
