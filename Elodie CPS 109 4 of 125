@@ -1,0 +1,5 @@
+# Elodie-125-Python-Problems
+def only_odd_digits(n):
+    return set(str(n)).issubset(set('13579'))
+
+print(only_odd_digits())
