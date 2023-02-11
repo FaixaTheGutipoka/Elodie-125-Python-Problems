@@ -1,0 +1,13 @@
+# Elodie-125-Python-Problems
+def is_cyclops(n):
+    a=str(n)
+    b=len(a)
+    if b%2!=0:
+        c=b//2
+        if a[c]=='0':
+            return True
+        return False
+    return False
+
+print(is_cyclops())
+        
