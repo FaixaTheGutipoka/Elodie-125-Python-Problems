@@ -1,0 +1,14 @@
+# Elodie-125-Python-Problems
+def riffle(items, out):
+    a=[]
+    b=len(items)//2
+    for i in range(b):
+        if out:
+            a.append(items[i])
+            a.append(items[b+i])
+        else:
+            a.append(items[b+i])
+            a.append(items[i])
+    return a
+                
+print(riffle([], False))
