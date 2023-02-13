@@ -1,0 +1,11 @@
+# Elodie-125-Python-Problems
+def domino_cycle(tiles):
+  for (x,y) in enumerate(tiles):
+     if x > 0:
+       if y[0] == tiles[x-1][1]:
+         continue
+       else:
+         return False
+  return True
+
+print(domino_cycle([(3, 5), (5, 2), (2, 3)]))
